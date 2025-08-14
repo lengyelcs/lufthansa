@@ -1,11 +1,11 @@
-# Lufthansa Task - Symfony with Docker
+# Lufthansa - Symfony with Docker
 
 ## Setup instructions
 
 1. Clone this repository:
    ```
    git clone <repository-url>
-   cd lufthansa-task
+   cd lufthansa
    ```
 
 2. Start the Docker containers:
