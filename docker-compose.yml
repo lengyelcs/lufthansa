@@ -5,6 +5,8 @@ services:
     build: ./docker/php
     volumes:
       - .:/var/www/symfony
+    depends_on:
+      - db
     networks:
       - symfony
 
@@ -14,6 +16,8 @@ services:
       - "80:80"
     volumes:
       - .:/var/www/symfony
+    depends_on:
+      - php
     networks:
       - symfony
 
@@ -26,6 +30,7 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD:-symfony}
     networks:
       - symfony
+
 
 networks:
   symfony:
