@@ -1,0 +1,17 @@
+errors:
+    user_not_found: "User not found."
+    invalid_json: "Invalid JSON."
+    validation_failed: "Validation failed."
+    user_created_successfully: "User created successfully."
+
+validation:
+    firstName:
+        not_blank: "First name is required."
+    lastName:
+        not_blank: "Last name is required."
+    email:
+        not_blank: "Email should not be blank."
+        invalid: "Email address is not valid."
+    password:
+        not_blank: "Password is required."
+        min_length: "Your password must be at least {{ limit }} characters."
